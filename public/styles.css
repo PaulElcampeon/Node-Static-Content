@@ -1,0 +1,53 @@
+body {
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+}
+
+h1 {
+  margin: 0;
+  padding: 1rem;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid black;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.15s all ease;
+  transition: 0.15s all ease;
+}
+
+h1:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size: 7vw;
+  }
+}
+
+p {
+  margin: auto;
+  letter-spacing: 0.1em;
+  padding-top: 2rem;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.15s all ease;
+  transition: 0.15s all ease;
+  width: 80%;
+}
+
+p:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+@media only screen and (max-width: 400px) {
+  p {
+    font-size: 4vw;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

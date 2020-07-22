@@ -1,0 +1,42 @@
+
+@import "./mediaQueries.scss";
+
+body {
+    text-align: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+h1 {
+    margin: 0;
+    padding: 1rem;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid black;
+    transform: scale(1);
+    transition: 0.15s all ease;
+    
+    &:hover {
+     transform: scale(1.2);
+    }
+
+    @include small {
+        font-size: 7vw;
+    }
+}
+
+p {
+    margin: auto;
+    letter-spacing: 0.1em;
+    padding-top: 2rem;
+    transform: scale(1);
+    transition: 0.15s all ease;
+    width: 80%;
+   
+   &:hover {
+        transform: scale(1.2);
+   }
+
+   @include small {
+        font-size: 4vw;
+    }
+}
