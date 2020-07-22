@@ -2,7 +2,7 @@ const server = require('markdown-serve');
 
 const path = require("path")
 
-exports.renderMarkdown = (req, res) => {
+exports.renderMarkdown = (req, res,) => {
     var markdownServer = new server.MarkdownServer( path.resolve(__dirname, '../../content') );
  
     markdownServer.get(req.path, (err, result) => {
