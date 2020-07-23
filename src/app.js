@@ -15,7 +15,7 @@ app.set("view engine", "hbs")
 app.use("/", router)
 
 app.listen(PORT, () => {
-    console.log(`The server is now running on port ${port}!`)
+    console.log(`The server is now running on port ${PORT}!`)
 });
 
 module.exports = app
