@@ -1,3 +1,5 @@
+const PORT = process.env.PORT || 3000
+
 const express = require("express")
 
 const router = require("./router")
@@ -12,8 +14,8 @@ app.set("view engine", "hbs")
 
 app.use("/", router)
 
-app.listen(3000, () => {
-    console.log("The server is now running on port 3000!")
+app.listen(PORT, () => {
+    console.log(`The server is now running on port ${port}!`)
 });
 
 module.exports = app
